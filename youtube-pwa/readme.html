@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube PWA - Ad-Free with PiP</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #1a1a1a;
+            color: #fff;
+        }
+        h1 {
+            color: #ff0000;
+        }
+        .instructions {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .instructions ol {
+            line-height: 2;
+        }
+        .feature {
+            background: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border-left: 4px solid #ff0000;
+        }
+        code {
+            background: #333;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        .btn {
+            display: inline-block;
+            background: #ff0000;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎬 YouTube PWA</h1>
+    <p>An ad-free Progressive Web App wrapper for m.youtube.com with Picture-in-Picture support.</p>
+    
+    <div class="feature">
+        <strong>✨ Features:</strong>
+        <ul>
+            <li>Direct connection to m.youtube.com (real YouTube content)</li>
+            <li>Picture-in-Picture (PiP) support for multitasking</li>
+            <li>PWA installable on mobile and desktop</li>
+            <li>Standalone app experience</li>
+            <li>Dark theme optimized for video watching</li>
+        </ul>
+    </div>
+
+    <div class="instructions">
+        <h2>📱 How to Install</h2>
+        <ol>
+            <li><strong>Serve this app:</strong> Run <code>npx serve .</code> or use any HTTPS server</li>
+            <li><strong>Open in browser:</strong> Navigate to the served URL</li>
+            <li><strong>Install PWA:</strong> 
+                <ul>
+                    <li>Chrome/Edge: Click the install icon in address bar</li>
+                    <li>iOS Safari: Tap Share → Add to Home Screen</li>
+                    <li>Android Chrome: Tap menu → Install app</li>
+                </ul>
+            </li>
+            <li><strong>Use PiP:</strong> Play a video, then tap the red PiP button in bottom-right corner</li>
+        </ol>
+    </div>
+
+    <div class="feature">
+        <strong>🎮 Keyboard Shortcuts:</strong>
+        <ul>
+            <li><code>Alt + P</code> - Toggle Picture-in-Picture mode</li>
+        </ul>
+    </div>
+
+    <div class="instructions">
+        <h2>⚠️ Important Notes</h2>
+        <p><strong>HTTPS Required:</strong> PWAs require HTTPS (except localhost). Use a secure server for production.</p>
+        <p><strong>Browser Support:</strong> PiP works best in Chrome, Edge, and Safari. Some browsers may have limitations with cross-origin iframes.</p>
+        <p><strong>Ad Blocking:</strong> This app uses m.youtube.com which has fewer ads than desktop. For complete ad-free experience, consider using browser extensions or YouTube Premium.</p>
+    </div>
+
+    <a href="/index.html" class="btn">Launch YouTube PWA →</a>
+
+    <footer style="margin-top: 40px; opacity: 0.7; font-size: 14px;">
+        <p>Built with ❤️ as a Progressive Web App</p>
+    </footer>
+</body>
+</html>
